@@ -26,8 +26,10 @@ execute_from_file "UniversalHomuMachine.homu";
 
 ### Register Locations
 The interpretations for the registers are given below:
+
 Register | Use | Literal Encoding | Register Encoding
-0 | Const 0 = homu | homu
+--- | --- | --- | ---
+0 | Const 0 | homu | homu
 1 | Result (R0) / Constant -1 | homU | hoMu
 2 | P | hoMu | hOmu
 3 | A | hoMU | hOMu
