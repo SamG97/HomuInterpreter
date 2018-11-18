@@ -1,0 +1,102 @@
+homu hoMU homU hoMU // Create constant -1 register at location 1
+homu homu hOMU hOmU // PC = 0
+homu (X) hoMu hOMU // P = -X
+homu hOmu hoMu HomU P = X
+homu (Y) hoMU HoMU // A = -Y
+homu hOMu hoMU HOmU // A = Y
+homu homUhOMU hOmu HOMU // RA = -11
+homu Homu hOmu homUhomU // RA = 11
+homu homu hOmU homUhoMU // X = 0
+hoMU homu hOMu homUhOmU // L = A
+homu hoMU HOMU HoMuhOMU // Call Push
+hOMu homu hoMU homUHomU // A = L
+hoMu homu HOmu homUHoMU // T = P
+HOmu homu hOMu homUHOmU // L = T
+homu hoMuhOMU hOmu homUHOMU // RA = -19
+homu Homu hOmu hoMuhomU // RA = 19
+homu hoMuHoMU HOMu hoMuhoMU // EXIT = -21
+homu homUHOmu HOMu hoMuhOmU // EXIT = 21
+homu hoMU HOMU HoMUhOMU // Call Pop
+hOMU hoMU hOMU hoMUHomU // PC -= 1
+homu hoMU HOMU hoMuhOmU // Loop back
+hoMU homu hOMu hoMuHOmU // L = A
+homu hoMUhOmU hOmu hoMuHOMU // RA = -26
+homu Homu hOmu hoMUhomU // RA = 26
+hOmu homu HOMu hoMUhoMU // EXIT = RA
+homu hoMU HOMU HoMUhOmU // Call Pop
+hOmU homu homU hoMUhOMU // R0 = X
+homu hoMU HOMU HOMUHOMU // HALT
+hOMU hoMu hOMU hoMUHoMU // Undo PC -= 1
+hOmU homu Homu hoMUHOmU // N = X
+Homu homu hOMu hoMUHOMU // L = N
+homu hOmuhOmU hOmu hOmuhomU // RA = -34
+homu Homu hOmu hOmuhoMU // RA = 34
+homu hoMU HOMU HoMUhOmU // Call Pop
+hOmU homu HomU hOmuhOMU // C = X
+hOMu homu Homu hOmuHomU // N = L
+homu homu HoMU hOmuHoMU // S = 0
+hoMU homu hOMu hOmuHOmU // L = A
+homu hOmUhOmU hOmu hOmuHOMU // RA = -42
+homu Homu hOmu hOmUhomU // RA = 42
+hOmu homu HOMu hOmUhoMU // EXIT = RA
+homu hoMU HOMU HoMUhOMU // Call Pop
+hOmU homu HoMu hOmUhOMU // R = X
+hOMu hoMu hoMU hOmUHomU // A = L
+HomU hoMU HomU hOMuHomU // C -= 1
+HomU hoMU HomU hOMUhomU // C -= 1
+HoMU homu hOMu hOmUHOMU // L = S
+homu hOMuhOmU hOmu hOMuhomU // RA = -50
+homu Homu hOmu hOMuhoMU // RA = 50
+homu hoMU HOMU HoMuhOMU // Call Push
+hOMu homu HoMU hOMuhOMU // S = L
+homu hoMU HOMU hOmuHoMU // Loop back
+HomU hoMu HomU hOMuHoMU // Undo C -= 1
+HoMu hoMu HoMu hOMuHOmU // R += 1
+Homu homu hOMU HomuHOMU // PC = N
+homu hoMU HOMU HomuHoMU // Recombine Lanes
+HomU hoMu HomU hOMUhoMU // Undo C -= 1
+Homu hoMu Homu hOMUhOmU // N += 1
+Homu homu hOMu hOMUhOMU // L = N
+homu hOMUHOMU hOmu hOMUHomU // RA = -63
+homu Homu hOmu hOMUHoMU // RA = 63
+hOmu homu HOMu hOMUHoMU // EXIT = RA
+homu hoMU HOMU HoMUhOMU // Call Pop
+hOmU homu hOMU HomuhomU // PC = X
+hOMu homu Homu HomuhoMU // N = L
+HoMu hoMU HoMu HomuhOMU // R -= 1
+homu hoMU HOMU HomuHoMU // Recombine Lanes
+HoMu hoMu HoMu HomuHoMU // Undo R -= 1
+Homu homu hOMU HomuHoMU // PC = N
+HoMu homu hOmU HomuHOmU // X = R
+homu homUHomU HOMu HomuHOMU // EXIT = -12
+homu homUHOmu HOMu HomUhomU // EXIT = 12
+hoMU homu hOMu HomUhoMU // L = A
+homu HomUHomU hOmu HomUhOmU // RA = -76
+homu Homu hOmu HomUhOMU // RA = 76
+homu hoMU HOMU HoMuhOMU // Call Push
+hOMu homu hoMU HomUHoMU // A = L
+HoMU homu hOMu HomUHOmU // L = S
+homu HoMuhoMU hOmu HomUHOMU // RA = -81
+homu Homu hOmu HoMuhomU // RA = 81
+homu hoMU HOMU HoMUhOMU // Call Pop
+hOMu homu HoMU HoMuhOmU // S = L
+homu hoMU HOMU HomUhomU // Loop back
+homu hoMU HOmU HoMuHomU // Start of push; Z = -1
+HOmU HOmu HOmU HoMuHoMU // Z -= L
+hOMu homUHoMu hOMu HoMuHOmU // L -= Z
+homu homu HOmU HoMuHOMU // Z = 0
+hOmU hoMU hOmU HoMUhoMU // X -= 1
+homu hoMU hoMU HoMuHomU // Loop back
+hOmU hoMu hOmU HoMUhOmU // Undo X -= 1
+homu hoMU hoMU Homu // End of push; Return
+homu homu HOmU HoMUHomU // Start of pop; Z = 0
+homu homu hOmU HoMUHoMU // X = 0
+hOMu hoMU HOMU homUHOmu // Exit
+hOMu homu HOmU HoMUHOMU // Z = L
+homu homu hOMu HOmuhomU // L = 0
+HOmU hoMU HOmU HOmuHomU // Z -= 1
+HOmU hoMU HOmU Homu // Z-= 1 -> Return
+hOMu hoMu hOMu HOmuhOMU // L += 1
+homu hoMU HOMU HOmuhomU // Loop back
+hOmU hoMu hOmU HOmuHoMU // X += 1
+homu hoMU HOMU HoMUHOmU // End of pop; Loop back

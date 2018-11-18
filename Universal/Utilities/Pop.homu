@@ -1,0 +1,11 @@
+homu homu HOmU (2) // Z = 0
+homu homu hOmU (3) // X = 0
+hOMu hoMU HOMU homUHOmu // Exit
+hOMu homu HOmU (5) // Z = L
+homu homu hOMu (6) // L = 0
+HOmU hoMU HOmU (10) // Z -= 1
+HOmU hoMU HOmU Homu // Z-= 1 -> Return
+hOMu hoMu hOMu (9) // L += 1
+homu hoMU HOMU (6) // Loop back
+hOmU hoMu hOmU (11) // X += 1
+homu hoMU HOMU (4) // Loop back

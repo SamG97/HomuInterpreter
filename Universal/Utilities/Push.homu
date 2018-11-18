@@ -1,0 +1,8 @@
+homu hoMU HOmU (2) // Z = -1
+HOmU HOmu HOmU (3) // Z -= L
+hOMu homUHoMu hOMu (4) // L -= Z
+homu homu HOmU (5) // Z = 0
+hOmU hoMU hOmU (7) // X -= 1
+homu hoMU hoMU (2) // Loop back
+hOmU hoMu hOmU (8) // Undo X -= 1
+homu hoMU hoMU Homu // Return
